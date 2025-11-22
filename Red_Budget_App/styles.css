@@ -1,0 +1,147 @@
+﻿/* 🌿 FinWise Color Palette */
+:root {
+    --green: #2E8B57;
+    --cream: #FAF3E0;
+    --dark-green: #206040;
+    --light-green: #98FB98;
+    --logo-green: #32de84;
+    --mint: #4FFFB0;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: var(--green);
+    color: var(--green);
+    line-height: 1.6;
+}
+
+/* 🧭 Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--logo-green);
+    padding: 1rem 2rem;
+    border-bottom: 4px solid rgba(255,255,255,0.2);
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--cream);
+    letter-spacing: 1px;
+}
+
+/* Links Container */
+.resource-banner a {
+    margin-left: 1.2rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.7rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+    /* Hover Effect */
+    .resource-banner a:hover {
+        background: rgba(255, 255, 255, 0.28);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+
+.hero-split {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    padding: 4rem 2rem;
+    background: #e8f9e3; /* cream background */
+}
+
+
+.hero-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .iphone-frame img {
+        width: 100%;
+        border-radius: 2.5rem; /* round the phone image! */
+    }
+
+.hero-right {
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.app-description {
+    background: var(--green); /* medium green */
+    padding: 2rem;
+    border-radius: 2rem;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.team-section {
+    background: var(--logo-green);
+    color: var(--dark-green);
+    padding: 4rem 2rem;
+    margin-top: 5rem;
+    border-radius: 2rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.mini-card {
+    background: white;
+    width: 150px;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease;
+}
+
+    .mini-card.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .mini-card img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%; /* round images */
+        object-fit: cover;
+        border: 4px solid var(--green);
+    }
+
+.team-mini {
+    background: var(--green);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    display: flex; /* put them in a row */
+    gap: 2rem; /* spacing between cards */
+    justify-content: center; /* center the whole row */
+    align-items: center; /* vertically aligned */
+    flex-wrap: nowrap; /* keep them in ONE row */
+}
+
